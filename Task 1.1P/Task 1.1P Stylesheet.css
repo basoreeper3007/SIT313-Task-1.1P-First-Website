@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  background-color: #000000;
+}
+
+/* Below removes the underlines on links within the navbar div but no where else */
+.navbar a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: #4169E1;
+}
+
+.navbar {
+  margin: 20px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.popup {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #A9A9A9;
+  color: #00FF7F;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* the top line means that when we hover over the banner,
+the popup classes is changed, and the changes are encompassed below*/
+.banner:hover .popup {
+  opacity: 0.7;
+}
+
+.pfp {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pfp img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.jobdesc {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Arial;
+  color: #00FF7F;
+}
+
+.jobdesc hr {
+  width: 23%;
+  height: 4px;
+  border: none;
+  background-color: #1E90FF;
+}
+
+.projects img {
+  width: 30%;
+  margin-top: 50px;
+  float: left;
+  border-radius: 20%;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+.projects p {
+  margin-left: 25px;
+  text-align-last: center;
+  font-size: 18px;
+  font-family: Arial;
+  color: #1E90FF;
+}
+
+.line {
+  width: 23%; /* Adjust the width as needed */
+  height: 4px;
+  background-color: #1E90FF;
+  margin: 30px auto;
+  border-radius: 10%;
+}
+
+.gallery h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 23px;
+  font-family: Arial;
+  color: #00FF7F;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+  width: 400px;
+  height: 100%;
+}
